@@ -10,6 +10,9 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import Winners from "./pages/Winners";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +44,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/winners" element={<Winners />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

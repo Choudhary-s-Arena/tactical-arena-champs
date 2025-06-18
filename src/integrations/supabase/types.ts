@@ -9,7 +9,149 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      blog_comments: {
+        Row: {
+          author_email: string
+          author_name: string
+          blog_post_id: string
+          content: string
+          created_at: string
+          id: string
+          status: string
+        }
+        Insert: {
+          author_email: string
+          author_name: string
+          blog_post_id: string
+          content: string
+          created_at?: string
+          id?: string
+          status?: string
+        }
+        Update: {
+          author_email?: string
+          author_name?: string
+          blog_post_id?: string
+          content?: string
+          created_at?: string
+          id?: string
+          status?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "blog_comments_blog_post_id_fkey"
+            columns: ["blog_post_id"]
+            isOneToOne: false
+            referencedRelation: "blog_posts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      blog_posts: {
+        Row: {
+          author_id: string
+          author_name: string
+          category: string
+          content: string
+          created_at: string
+          excerpt: string | null
+          featured_image_url: string | null
+          id: string
+          meta_description: string | null
+          scheduled_at: string | null
+          slug: string
+          status: string
+          tags: string[] | null
+          title: string
+          updated_at: string
+          views_count: number | null
+        }
+        Insert: {
+          author_id: string
+          author_name: string
+          category?: string
+          content: string
+          created_at?: string
+          excerpt?: string | null
+          featured_image_url?: string | null
+          id?: string
+          meta_description?: string | null
+          scheduled_at?: string | null
+          slug: string
+          status?: string
+          tags?: string[] | null
+          title: string
+          updated_at?: string
+          views_count?: number | null
+        }
+        Update: {
+          author_id?: string
+          author_name?: string
+          category?: string
+          content?: string
+          created_at?: string
+          excerpt?: string | null
+          featured_image_url?: string | null
+          id?: string
+          meta_description?: string | null
+          scheduled_at?: string | null
+          slug?: string
+          status?: string
+          tags?: string[] | null
+          title?: string
+          updated_at?: string
+          views_count?: number | null
+        }
+        Relationships: []
+      }
+      winners: {
+        Row: {
+          created_at: string
+          game_title: string
+          id: string
+          placement: number
+          player_avatar_url: string | null
+          player_name: string
+          prize_amount: number | null
+          stats: Json | null
+          tournament_date: string
+          tournament_id: string
+          tournament_name: string
+          tournament_size: number
+          tournament_type: string
+        }
+        Insert: {
+          created_at?: string
+          game_title: string
+          id?: string
+          placement: number
+          player_avatar_url?: string | null
+          player_name: string
+          prize_amount?: number | null
+          stats?: Json | null
+          tournament_date: string
+          tournament_id: string
+          tournament_name: string
+          tournament_size: number
+          tournament_type: string
+        }
+        Update: {
+          created_at?: string
+          game_title?: string
+          id?: string
+          placement?: number
+          player_avatar_url?: string | null
+          player_name?: string
+          prize_amount?: number | null
+          stats?: Json | null
+          tournament_date?: string
+          tournament_id?: string
+          tournament_name?: string
+          tournament_size?: number
+          tournament_type?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
