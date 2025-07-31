@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+# 🎮 TACTICAL ARENA – Choudhary Tournaments
 
-## Project info
+Welcome to **TACTICAL ARENA**, an elite gaming tournament platform built for competitive players and gaming enthusiasts. Whether you're looking to **join high-stakes tournaments**, **track your rankings**, or **connect with the gaming community**, this platform delivers a seamless, tactical experience.
 
-**URL**: https://lovable.dev/projects/637c4106-33c3-4aaf-9763-fb06db4c9adf
+---
 
-## How can I edit this code?
+## 🚀 Project Overview
 
-There are several ways of editing your application.
+**TACTICAL ARENA** is a modern, responsive web application developed using the latest frontend technologies. It offers:
 
-**Use Lovable**
+- 🧠 Multi-step player & team registration flow  
+- 🏆 Real-time leaderboard and rankings  
+- 📊 Tournament dashboards with prize pools, player stats, and match summaries  
+- 📝 Blog and resources hub  
+- 📧 Contact and support pages  
+- 📚 Full legal compliance with Terms of Service and Privacy Policy  
+- 🎯 A high-tech, interactive user interface inspired by competitive FPS aesthetics  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/637c4106-33c3-4aaf-9763-fb06db4c9adf) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Target Audience
 
-**Use your preferred IDE**
+This platform is made for:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Gamers** eager to participate in professionally managed tournaments  
+- **Squads** looking to register as a team and prove their skills  
+- **Fans & community** members wanting to follow the scene through rankings and blogs  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Technology           | Description                                         |
+|----------------------|-----------------------------------------------------|
+| **React + TypeScript** | Component-based architecture with type safety     |
+| **Vite**             | Blazing fast bundler and dev server                |
+| **Tailwind CSS**     | Utility-first styling for responsive UI            |
+| **shadcn/ui**        | Beautifully designed UI components                 |
+| **Lucide-react**     | Icon set for modern tactical icons                 |
+| **React Router**     | Client-side routing                                |
+| **React Query**      | Efficient data fetching & caching                  |
+| **Supabase** (planned/integrated) | Backend/database services (auth, storage) |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧩 Features
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- 🔥 **Dashboard** with real-time stats, tournament info, and winners  
+- 📝 **Registration** flow broken into immersive multi-step “Deployment Phases”  
+- 🧑‍🤝‍🧑 **Player & Squad Enlistment** forms with validation and smooth transitions  
+- 📊 **Rankings** that dynamically display kills, matches, and K/D ratio  
+- ✉️ **Contact Page** styled as a tactical command center  
+- 📄 Legal pages with structured layout and sticky navigation  
+- 📱 Fully **responsive** across devices with smooth animations  
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/637c4106-33c3-4aaf-9763-fb06db4c9adf) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
