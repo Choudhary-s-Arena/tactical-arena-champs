@@ -12,9 +12,10 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-tactical-teal to-electric-blue rounded-lg flex items-center justify-center">
-                <Target className="w-6 h-6 text-white" />
-              </div>
+              {/* Logo Image */}
+              <img src="logo.png" alt="Choudhary Logo" className="pl-2 w-10 h-10 object-contain" />
+
+              {/* Text Branding */}
               <div className="text-xl font-bold text-tactical-teal">
                 CHOUDHARY
                 <span className="block text-xs text-electric-blue tracking-widest">TOURNAMENTS</span>
@@ -57,7 +58,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/privacy" className="text-sm text-muted-foreground hover:text-tactical-teal transition-colors">Privacy Policy</Link></li>
               <li><Link to="/terms" className="text-sm text-muted-foreground hover:text-tactical-teal transition-colors">Terms of Service</Link></li>
-              <li><Link to="/cookies" className="text-sm text-muted-foreground hover:text-tactical-teal transition-colors">Cookie Policy</Link></li>
+              <li><Link to="/cookie" className="text-sm text-muted-foreground hover:text-tactical-teal transition-colors">Cookie Policy</Link></li>
               <li><Link to="/contact" className="text-sm text-muted-foreground hover:text-tactical-teal transition-colors">Contact Us</Link></li>
               <li><Link to="/about" className="text-sm text-muted-foreground hover:text-tactical-teal transition-colors">About Us</Link></li>
             </ul>
@@ -81,15 +82,15 @@ const Footer = () => {
             <div className="space-y-2 pt-2">
               <div className="flex items-center space-x-2 text-xs text-muted-foreground">
                 <Mail className="w-3 h-3" />
-                <span>tournaments@choudhary.com</span>
+                <span>choudharysmarket@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 text-xs text-muted-foreground">
                 <Phone className="w-3 h-3" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9136725665</span>
               </div>
               <div className="flex items-center space-x-2 text-xs text-muted-foreground">
                 <MapPin className="w-3 h-3" />
-                <span>Gaming Arena, City</span>
+                <span>Sakinaka, Mumbai</span>
               </div>
             </div>
           </div>
@@ -98,7 +99,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-tactical-teal/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Choudhary Tournaments. All rights reserved.
+            © 2025 Choudhary Tournaments. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground mt-2 md:mt-0">
             Built for elite gamers, by elite gamers.

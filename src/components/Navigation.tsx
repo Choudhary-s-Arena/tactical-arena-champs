@@ -22,9 +22,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 tactical-glow">
-            <div className="w-10 h-10 bg-gradient-to-br from-tactical-teal to-electric-blue rounded-lg flex items-center justify-center">
-              <Target className="w-6 h-6 text-white" />
-            </div>
+            <img src="logo.png" alt="Choudhary Logo" className="pl-2 w-10 h-10 object-contain"/>
             <div className="text-xl font-bold text-tactical-teal">
               CHOUDHARY
               <span className="block text-xs text-electric-blue tracking-widest">TOURNAMENTS</span>

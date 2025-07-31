@@ -16,6 +16,14 @@ import Winners from "./pages/Winners";
 import About from "./pages/About";
 import Tournaments from "./pages/Tournaments";
 import NotFound from "./pages/NotFound";
+import Registration from "./pages/Registration";
+import RulesReg from "./pages/RulesReg";
+import SupportCenter from "./pages/SupportCenter";
+import PlayerRanking from "./pages/PlayerRanking";
+import ContactUs from "./pages/ContactUs";
+import CookiePolicy from "./pages/CookiePolicy";
+import Terms from "./pages/Terms";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -50,7 +58,16 @@ const App = () => {
               <Route path="/winners" element={<Winners />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
+              <Route path="/register" element={<Registration />} />
               <Route path="/about" element={<About />} />
+              <Route path="/rules" element={<RulesReg />} />
+              <Route path="/support" element={<SupportCenter />} />
+              <Route path="/rankings" element={<PlayerRanking />} />
+              <Route path="/contact" element={<ContactUs />} />
+              <Route path="/cookie" element={<CookiePolicy />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
