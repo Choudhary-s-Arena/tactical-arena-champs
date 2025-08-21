@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Button } from "@/components/ui/button";
 
 const termsSections = [
   {
@@ -78,6 +79,20 @@ const termsSections = [
 ];
 
 export default function Terms() {
+
+  const handleDownload = () => {
+      const pdfUrl = '/Terms_and_Conditions_New.pdf';
+      
+      // Create a temporary link element
+      const link = document.createElement('a');
+      link.href = pdfUrl;
+      link.download = 'Terms_and_Conditions_New.pdf'; // Specifies the download filename
+      link.target = '_blank'; // Open in new tab as fallback
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+
   return (
     <div className="min-h-screen bg-background pt-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
@@ -147,6 +162,14 @@ export default function Terms() {
               </Card>
             ))}
           </ScrollArea>
+        </div>
+        <div className="flex justify-center mt-12 mb-20">
+          <Button 
+            className="btn-tactical text-primary-foreground font-semibold"
+            onClick={handleDownload}
+          >
+            Download Full Terms and Conditions (PDF)
+          </Button>
         </div>
       </div>
     </div>
