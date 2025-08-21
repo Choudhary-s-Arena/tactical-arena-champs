@@ -7,6 +7,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   const [stats, setStats] = useState({
     totalTournaments: 0,
     activePlayers: 0,
@@ -42,10 +43,10 @@ const Dashboard = () => {
   ];
 
   const recentWinners = [
-    { name: 'TacticalSniper', tournament: 'Spring Championship', prize: '$5,000', rank: 1 },
-    { name: 'EliteGamer99', tournament: 'Combat Arena Pro', prize: '$3,500', rank: 2 },
-    { name: 'WarriorX', tournament: 'Tactical Masters', prize: '$2,800', rank: 3 },
-    { name: 'StealthMode', tournament: 'Arena Legends', prize: '$2,200', rank: 4 },
+    { name: 'TacticalSniper', tournament: 'Spring Championship', prize: '₹5,000', rank: 1 },
+    { name: 'EliteGamer99', tournament: 'Combat Arena Pro', prize: '₹3,500', rank: 2 },
+    { name: 'WarriorX', tournament: 'Tactical Masters', prize: '₹2,800', rank: 3 },
+    { name: 'StealthMode', tournament: 'Arena Legends', prize: '₹2,200', rank: 4 },
   ];
 
   const StatCard = ({ title, value, icon: Icon, description, trend }: any) => (
@@ -79,18 +80,18 @@ const Dashboard = () => {
       <div className="max-w-7xl mx-auto space-y-8">
         {/* Hero Section */}
         <div className="text-center space-y-4 py-12">
-          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-tactical-teal to-electric-blue bg-clip-text text-transparent">
-            TACTICAL ARENA
+          <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-tactical-teal to-electric-blue bg-clip-text /*text-transparent*/">
+            Gamers Arena
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Elite gaming tournaments where legends are forged. Join the battlefield and prove your tactical supremacy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-            <Button className="btn-tactical text-white font-semibold px-8 py-3">
+            <Button className="btn-tactical text-white font-semibold px-8 py-3" onClick={ () => navigate("")}>
               <Target className="w-5 h-5 mr-2" />
               Join Tournament
             </Button>
-            <Button variant="outline" className="border-tactical-teal text-tactical-teal hover:bg-tactical-teal hover:text-background px-8 py-3">
+            <Button variant="outline" className="border-tactical-teal text-tactical-teal hover:bg-tactical-teal hover:text-background px-8 py-3" onClick={ () => navigate("/rankings")}>
               <Trophy className="w-5 h-5 mr-2" />
               View Rankings
             </Button>
@@ -115,7 +116,7 @@ const Dashboard = () => {
           />
           <StatCard
             title="Total Prize Pool"
-            value={isLoading ? '' : `$${stats.totalPrizePool.toLocaleString()}`}
+            value={isLoading ? '' : `₹${stats.totalPrizePool.toLocaleString()}`}
             icon={DollarSign}
             description="Distributed rewards"
             trend={24}
@@ -239,11 +240,15 @@ const Dashboard = () => {
             Your tactical skills are your greatest weapon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-tactical text-white font-semibold px-8 py-3">
+            <Button className="btn-tactical text-white font-semibold px-8 py-3" onClick={ () => navigate("")}>
               <Zap className="w-5 h-5 mr-2" />
               Register Now
             </Button>
-            <Button variant="outline" className="border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-background px-8 py-3">
+            <Button 
+              variant="outline" 
+              className="border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-background px-8 py-3"
+              onClick={() => navigate("/rules")}
+            >
               View Tournament Rules
             </Button>
           </div>
