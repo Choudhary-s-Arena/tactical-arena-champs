@@ -87,10 +87,13 @@ const Dashboard = () => {
             Elite gaming tournaments where legends are forged. Join the battlefield and prove your tactical supremacy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-            <Button className="btn-tactical text-white font-semibold px-8 py-3" onClick={ () => navigate("")}>
-              <Target className="w-5 h-5 mr-2" />
-              Join Tournament
-            </Button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScLdpWzlFyU9F9ICW4ielVY3d_pgg_a_fk8J0NqMcQl5xk4NA/viewform?embedded=true" target="_blank" rel="noopener noreferrer">
+              <Button className="btn-tactical text-white font-semibold px-8 py-3" onClick={ () => navigate("")}>
+                <Target className="w-5 h-5 mr-2" />
+                Join Tournament
+              </Button>
+            </a>
+
             <Button variant="outline" className="border-tactical-teal text-tactical-teal hover:bg-tactical-teal hover:text-background px-8 py-3" onClick={ () => navigate("/rankings")}>
               <Trophy className="w-5 h-5 mr-2" />
               View Rankings
@@ -240,10 +243,12 @@ const Dashboard = () => {
             Your tactical skills are your greatest weapon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-tactical text-white font-semibold px-8 py-3" onClick={ () => navigate("")}>
-              <Zap className="w-5 h-5 mr-2" />
-              Register Now
-            </Button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScLdpWzlFyU9F9ICW4ielVY3d_pgg_a_fk8J0NqMcQl5xk4NA/viewform?embedded=true" target="_blank" rel="noopener noreferrer">
+              <Button className="btn-tactical text-white font-semibold px-8 py-3" onClick={ () => navigate("")}>
+                <Zap className="w-5 h-5 mr-2" />
+                Register Now
+              </Button>
+            </a>
             <Button 
               variant="outline" 
               className="border-electric-blue text-electric-blue hover:bg-electric-blue hover:text-background px-8 py-3"

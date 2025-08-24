@@ -25,18 +25,29 @@ const Footer = () => {
               Elite gaming tournaments where legends are forged. Join the battlefield and prove your tactical supremacy.
             </p>
             <div className="flex space-x-4">
-              <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
-                <Facebook className="w-4 h-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
-                <Twitter className="w-4 h-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
-                <Youtube className="w-4 h-4" />
-              </Button>
-              <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
-                <Instagram className="w-4 h-4" />
-              </Button>
+              <a href="https://www.facebook.com/share/16iQ59hFHi/ " target="_blank" rel="noopener noreferrer">
+                <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
+                  <Facebook className="w-8 h-8" />
+                </Button>
+              </a>
+
+              <a href="https://x.com/aj_ay4532?t=rjweBMzIfSQV1M8cYbt7Vw&s=08 " target="_blank" rel="noopener noreferrer">
+                <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
+                  <Twitter className="w-4 h-4" />
+                </Button>
+              </a>
+
+              <a href="https://www.youtube.com/@choudhary_tournament " target="_blank" rel="noopener noreferrer">
+                <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
+                  <Youtube className="w-4 h-4" />
+                </Button>
+              </a>
+
+              <a href="https://www.instagram.com/choudhary_tournament/?hl=en  " target="_blank" rel="noopener noreferrer">
+                <Button size="sm" variant="ghost" className="text-tactical-teal hover:bg-tactical-gray">
+                  <Instagram className="w-10 h-10" />
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -86,7 +97,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-xs text-muted-foreground">
                 <Phone className="w-3 h-3" />
-                <span>+91 9136725665</span>
+                <span>+91 9619309169</span>
               </div>
               <div className="flex items-center space-x-2 text-xs text-muted-foreground">
                 <MapPin className="w-3 h-3" />
